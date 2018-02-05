@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>with us</title>
+  </head>
+  	<body>	
+	{% for Post in Postlist %}
+			<a href="{% url 'post_detail' pk=Post.post_no%}">{{Post.post_contents}}</a>
+			<br>
+	{% endfor %}
+	</body>
+</html>
